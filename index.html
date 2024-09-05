@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="icon.ico" type="image/x-icon">
+    <title>Segunda Guerra</title>
+    <link rel="stylesheet" href="styles.css">
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <title>Segunda Guerra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+        }
+
+        header {
+            background-color: #8B0000; /* Vermelho escuro */
+            color: #fff; /* Branco */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Branco */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8B0000; /* Vermelho escuro ao passar o mouse */
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #000; /* Preto */
+        }
+
+        .video-card {
+            background-color: #333; /* Cinza escuro */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Brilho vermelho ao passar o mouse */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+            margin-bottom: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: 2px solid #8B0000; /* Borda vermelha escura */
+        }
+
+        .video-card h3 {
+            margin: 10px 0 0;
+            color: #fff; /* Branco */
+        }
+
+        footer {
+            background-color: #8B0000; /* Vermelho escuro */
+            color: #fff; /* Branco */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: -40px; /* Inicialmente escondido abaixo da tela */
+            width: 100%;
+            transition: bottom 0.3s; /* Transição suave para aparecer/desaparecer */
+        }
+
+        footer:hover {
+            bottom: 0; /* Mostra o rodapé ao passar o mouse */
+        }
+
+        .descricao {
+            background-color: #222; /* Fundo cinza escuro para contraste */
+            color: #fff; /* Cor do texto */
+            padding: 30px;
+            border-radius: 15px; /* Aumenta o arredondamento das bordas */
+            border: 3px solid #8B0000; /* Adiciona uma borda vermelha escura */
+            margin-top: 20px;
+            overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+        }
+
+        .descricao h2 {
+            font-size: 2.5rem; /* Aumenta o tamanho do título */
+            margin-bottom: 20px;
+            color: #8B0000; /* Vermelho escuro para o título */
+        }
+
+        .descricao-conteudo {
+            display: flex; /* Alinha o conteúdo horizontalmente */
+            align-items: flex-start; /* Alinha os itens ao topo */
+            gap: 20px; /* Espaçamento entre texto e imagem */
+        }
+
+        .descricao p {
+            font-size: 1.5rem; /* Aumenta o tamanho do texto */
+            line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+            color: #ccc; /* Cor do texto */
+            max-width: 60%; /* Limita a largura do texto */
+        }
+
+        .descricao img.descricao-imagem {
+            max-width: 40%; /* Limita a largura da imagem */
+            height: auto;
+            border-radius: 10px; /* Mantém o arredondamento das bordas */
+            border: 3px solid #8B0000; /* Aumenta a borda vermelha escura */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Crônicas da 2°Guerra</h1>
+    </header>
+    
+     <main>
+        <section class="video-grid">
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/v9aau5onflo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>A Segunda Guerra Mundial (Parte 1)</h3>
+            </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/4hEDjSdszSU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>HISTÓRIA GERAL - 2ª GUERRA MUNDIAL</h3>
+            </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/75eeykQFbdU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Resumo de História: 2a GUERRA MUNDIAL (Débora Aladim)</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SI8fs5eqe74" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>A História de Hitler</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/UI3SGRcEkn8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>NAZISMO E FASCISMO</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/BYDoEStkCiA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Segunda Guerra Mundial | Resumindo</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qXKgKu8aL48" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>O que faziam os parentes de Hitler durante e após a II Guerra?</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SSbxlsQYU3o" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Como ADOLF HITLER chegou ao PODER?</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Jhcr172zeCg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>WHAT IF HITLER HAD WON WORLD WAR II?</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PPPRCeK46ck" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>A VERDADE POR TRÁS DA MORTE DE HITLER - Nostalgia Animado</h3>
+            </article>
+              </article>
+            <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/rcVb6l4TpHw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>German Soldier's Song - "Erika" (with English Subtitles)</h3>
+            </article>
+              <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/3BripMnssQE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>A FEB: O Brasil na Segunda Guerra Mundial</h3>
+            </article>
+              <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QP0hLZxkfLs" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>A HISTÓRIA DO BRASIL NA 2º GUERRA MUNDIAL</h3>
+            </article>
+              <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/X3tzNEvpzTY" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Como Hitler e os Nazistas modificaram a Bíblia</h3>
+            </article>
+              <article class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/saNaD7lBX14" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>QUEM FORAM as pessoas PRÓXIMAS de ADOLF HITLER</h3>
+            </article>
+            <!-- Adicione mais vídeos aqui -->
+        </section>
+
+    <section class="video-grid">
+        <!-- Cartões de vídeo existentes -->
+    </section>
+
+    <!-- Novo texto e imagem na parte inferior da página -->
+<section class="descricao">
+    <h2>Resumo da Segunda Guerra Mundial</h2>
+    <div class="descricao-conteudo">
+        <p>
+            A Segunda Guerra Mundial foi um conflito global que ocorreu de 1939 a 1945, envolvendo a maioria das nações do mundo, incluindo todas as grandes potências, organizadas em dois blocos opostos: os Aliados e as Potências do Eixo. O conflito teve início com a invasão da Polônia pela Alemanha em setembro de 1939 e se expandiu rapidamente, com países ao redor do globo se envolvendo em batalhas terrestres, marítimas e aéreas.
+        </p>
+        <p>
+            Os principais líderes das Potências do Eixo incluíam Adolf Hitler da Alemanha, Benito Mussolini da Itália e Hirohito do Japão. Em contrapartida, os Aliados eram liderados por países como os Estados Unidos, Reino Unido, União Soviética e China. A guerra foi marcada por batalhas devastadoras, como a Batalha de Stalingrado, o Dia D e a Batalha de Midway, além de eventos significativos como o Holocausto e o lançamento das bombas atômicas em Hiroshima e Nagasaki.
+        </p>
+        <p>
+            A Segunda Guerra Mundial terminou em 1945 com a rendição incondicional das Potências do Eixo. A guerra resultou em mudanças geopolíticas significativas, a criação das Nações Unidas, o início da Guerra Fria e uma reconstrução global que moldou o cenário político e econômico do pós-guerra. O conflito deixou um legado duradouro, influenciando a política internacional, a economia e as relações entre nações até os dias atuais.
+        </p>
+        <img src="hiimg.jpg" alt="Descrição da imagem" class="descricao-imagem">
+    </div>
+</section>
+<section class="descricao">
+    <h2>Adolf Hitler</h2>
+    <div class="descricao-conteudo">
+        <p>
+            Adolf Hitler (1889-1945) foi o líder do Partido Nacional Socialista dos Trabalhadores Alemães (Partido Nazista) e o principal responsável pelo início da Segunda Guerra Mundial. Nascido em Braunau am Inn, na Áustria, Hitler se tornou uma figura central na política alemã durante a década de 1930.
+        </p>
+        <p>
+            Em 1933, Hitler se tornou chanceler da Alemanha e, pouco depois, consolidou seu poder, estabelecendo uma ditadura totalitária. Seu regime promoveu políticas de extrema nacionalismo e racismo, que culminaram no Holocausto, o genocídio sistemático de seis milhões de judeus, além de milhões de outras vítimas, incluindo ciganos, homossexuais e prisioneiros de guerra.
+        </p>
+        <p>
+            A invasão da Polônia em setembro de 1939 marcou o início da Segunda Guerra Mundial, um conflito que se espalhou por toda a Europa e além. Durante a guerra, Hitler liderou a Alemanha em várias campanhas militares, mas, eventualmente, a guerra se voltou contra ele. Em abril de 1945, com a Alemanha derrotada e o regime nazista em colapso, Hitler cometeu suicídio em seu bunker em Berlim.
+        </p>
+        <p>
+          Seu legado é amplamente condenado devido às atrocidades cometidas durante seu regime e ao impacto devastador da guerra que ele provocou.
+        </p>">
+    </div>
+</section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Meu Site de Vídeos. Todos os direitos reservados a Brito e Maxim. F Benedita</p>
+    </footer>
+</body>
+</html>
